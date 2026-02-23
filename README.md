@@ -1,5 +1,5 @@
 # UBI-MCP-server-
-This MCP Server for University Business Incubators (UBIs) and clusters aids their performance analyses and assessments( Survivability, Sustainability and Structural rigidity), socio-human structural analysis and dynamic capabilities based on: Mixed Methods Strong Structuration Theory by Ademola Taiwo.
+This MCP Server for University Business Incubators (UBIs) and their clusters aids their performance analyses and assessments( Survivability, Sustainability and Structural rigidity), socio-human structural analysis and dynamic capabilities based on: Mixed Methods Strong Structuration Theory by Ademola Taiwo.
 
 
 README.md
@@ -11,21 +11,30 @@ A comprehensive MCP (Model Context Protocol) tool for analyzing university busin
 Overview
 This tool provides sophisticated analysis of university business incubators by integrating:
 
-Business Incubator Performance Analysis: Quantitative KPI analysis including occupancy rates, graduation rates, job creation, and revenue generation
+Business Incubator Performance Analysis: 
+
+Quantitative KPI analysis including occupancy rates, graduation rates, job creation, and revenue generation
 Socio-Structuration Analysis: Based on Giddens’ Structuration Theory, examining the duality of structure and agency
-Agentic Processes Analysis: Analyzing entrepreneurial agency capabilities including intentionality, forethought, self-reactiveness, and self-reflectiveness
-Features
-Synthetic Data Generation: Generate realistic incubator performance data, structuration contexts, and entrepreneur profiles
-Multi-dimensional Analysis: Analyze incubators from performance, structural, and agency perspectives
-Integrated Reporting: Generate comprehensive reports combining all three analytical perspectives
+Agentic Processes Analysis: Analyzing entrepreneurial agency capabilities including intentionality, forethought, self-reactiveness, and self-reflectiveness.
+
+Features:
+
+Synthetic Data Generation: Generate realistic incubator performance data, structuration contexts, and entrepreneur profiles.
+
+Multi-dimensional Analysis: Analyze incubators from performance, structural, and agency perspectives.
+
+Integrated Reporting: Generate comprehensive reports combining all three analytical perspectives.
+
 Flexible Output: Support for JSON, Markdown, and HTML report formats
-Temporal Analysis: Track structural evolution and performance trends over time
+Temporal Analysis: Track structural evolution and performance trends over time.
+
 Installation
 
 pip install pandas numpy scipy
 
-Quick Start
-from university_incubator_analysis import (
+Quick Start:
+Open the zip folder, navigate to the University_incubator_analysis file. 
+From university_incubator_analysis import (
     generate_incubator_data,
     analyze_performance,
     generate_structuration_contexts,
@@ -35,10 +44,12 @@ from university_incubator_analysis import (
     generate_comprehensive_report
 )
 
-# Generate synthetic data (10 incubators, 12 time periods)
+# Generate synthetic data for the number of incubator(s) (e.g. 10 incubators, 12 time periods).
+
 performance_data = generate_incubator_data(num_incubators=10, time_periods=12, seed=42)
 
 # Analyze performance
+
 performance_analysis = analyze_performance(performance_data)
 print(f"Average graduati>{performance_analysis['kpi_analysis']['success_metrics']['average_graduati>:.1%}")
 
@@ -75,6 +86,7 @@ results = analyze_performance(data)
 print(results['kpi_analysis'])
 print(results['trend_analysis'])
 print(results['insights'])
+
 2. Structuration Analysis
 Based on Giddens’ Structuration Theory, analyzes: - Signification: Meaning-making structures, rules, norms - Domination: Power relations, resource allocation - Legitimation: Normative orders, evaluation criteria - Structure-Agency Duality: How structures enable and constrain agency - Structuration Processes: Reproduction and transformation
 
